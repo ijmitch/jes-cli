@@ -27,7 +27,7 @@ IPCSDUMP -        SYSTSPRT VBA     137    61 105   3373
 12:59:20 IMITCHE@WINMVS2C ~ → pjdd JOB98459 IPCSDUMP IPCSPRNT | nvim -
 ```
 
-This get example pipes some IPCS output into `nvim` for browsing (could equally be `nano` or
+This example pipes some IPCS output into `nvim` for browsing (could equally be `nano` or
 another way to browsing.
 
 My first thought was to imagine a TUI for all this (perhaps using [Rich](https://github.com/Textualize/rich),
