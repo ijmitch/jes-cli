@@ -110,3 +110,13 @@ to copy the data out of JES and into the zFS location so it's easier to work wit
 (Which is not much more than `jes dd JOB98459 IPCSDUMP IPCSPRNT > <path>/JOB98459/IPCSPRNT.txt` or similar but with less typing.)
 
 Of course, I'm then responsible for deciding the fate of that job's folder in zFS.
+
+### JES as a virtual file system
+
+Having thought of `cp`ing JES data into zFS, and remembering we now have `/proc`, what if JES could be virtual 
+file system in a similar vein?
+
+```
+/JES/<jobname>/<step>/<files>
+```
+and do away with `jls`, `ddls` and `pjdd`.
